@@ -14,14 +14,14 @@ import javax.crypto.SecretKey;
 
 public class Encryption {
 	/*
-	 * Será utilizado o KeyGenerator para gerar a chave para controlar a criptografia e
-	 * descriptografia
+	 * Será utilizado o KeyGenerator para gerar a chave para controlar a
+	 * criptografia e descriptografia
 	 * 
 	 * KeyGenerator - É passado o parametro/string de criptografia
 	 * 
 	 * Algoritmos de criptografia simétricos: AES , RC2 , RC4 , RC5, IDEA, Blowfish
-	 * Algoritmos de criptografia assimétricos: 
-	 * RSA HASH: MD5
+	 * Algoritmos de criptografia assimétricos: RSA 
+	 * HASH: MD5
 	 */
 	public static void encryptAndDecrypt(String mensagem) {
 		try {
