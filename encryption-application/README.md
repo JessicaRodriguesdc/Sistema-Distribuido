@@ -1,6 +1,17 @@
-### Implementação do Algoritmo de criptografia
+## Algoritmo de criptografia
 
 <hr>
+
+### Uso
+
+> A criptografia tem como propósito diminuir/impedir que dados armazenados sejam lidos e permitir que dados sejam transmitidos de forma segura por um canal inseguro. Isso significa manter a confidencialidade, integridade e identidade desses dados.
+
+* Confidencialidade
+* Integridade
+* Identidade
+
+
+### Implementação
 
 > KeyGenerator - Gera uma chave secreta <br>
 SecretKey <br>
