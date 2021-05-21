@@ -23,17 +23,18 @@ public class PanelButton extends JPanel implements ActionListener{
 	public PanelButton(Controller ctrl, PanelSend panelSend) {
 		// TODO Auto-generated constructor stub
 		setBorder( new CompoundBorder( new EmptyBorder( 15, 15, 15, 15 ), new TitledBorder("") ) );
-		setLayout(new GridLayout(1,1));
+		setLayout(new GridLayout(1, 1));
 		this.ctrl = ctrl;
 		this.panelSend = panelSend;
 				
 		btnEnv = new JButton("Enviar");
 		btnEnv.setActionCommand("enviar");
-		btnEnv.addActionListener(this);	
+		btnEnv.addActionListener(this);			
 		
 		add(btnEnv);
 		
-		setVisible(true);	
+		setVisible(true);
+		
 	}
 
 	@Override
@@ -41,16 +42,16 @@ public class PanelButton extends JPanel implements ActionListener{
 		// TODO Auto-generated method stub
 		
 		String evento = e.getActionCommand();
-						
+		
 		switch (evento) {
 		case "enviar":
 			ctrl.send();
 			panelSend.setMessage("");
+			
 		break;
 
 		default:
 			break;
 		}
 	}
-
 }

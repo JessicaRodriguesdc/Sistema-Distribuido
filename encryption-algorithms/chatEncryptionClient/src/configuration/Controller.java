@@ -12,23 +12,22 @@ public class Controller {
 
 	public Controller() {
 		// TODO Auto-generated constructor stub
+
 		connection = new ServerConnection(this);
 		connection.start();
-//		llavesDes = new ArrayList<>();		
+//		llavesDes = new ArrayList<>();
 	}
 
-
-	public void connect(PanelSend panelSend,PanelButton panelButton) {
+	public void conectar(PanelSend panelSend,PanelButton panelButton) {
 		this.panelSend = panelSend;
 		this.panelButton = panelButton;
-
 	}
 
 	public void send(){
 		System.out.println("AES");
 		panelSend.setEncryption(encryptionAes());
 		panelSend.setConversation("Você: "+ panelSend.getEncryption());
-		connection.sendMessage(panelSend.getEncryption(), 3);			
+		connection.enviarMensaje(panelSend.getEncryption(), 3);			
 	}
 
 	public void messageReceived (String message){		
@@ -37,8 +36,9 @@ public class Controller {
 
 	public void algorithmMessage(String message, String ip){
 		panelSend.setConversation((ip + ": "+decodedAes(message.substring(1))));
-		panelSend.setEncryption(ip + ": "+ message.substring(1));
+		panelSend.setEncryption(ip + ": "+ message.substring(1));	
 	}
+	
 	
 	public String encryptionAes() {	
 		 String key = "92AE31A79FEEB2A3"; //chave

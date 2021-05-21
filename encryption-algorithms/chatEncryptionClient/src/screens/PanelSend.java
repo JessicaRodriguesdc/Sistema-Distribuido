@@ -1,7 +1,6 @@
 package screens;
 
 import java.awt.GridLayout;
-
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -18,12 +17,12 @@ public class PanelSend extends JPanel {
 	JTextField message, cipheredMessage;
 	JTextArea conversation;
 	JLabel chat, history, ciphered;
-	JButton btnSend, btnCiphered, btnDecipher;
+	JButton btnEnviar, btnCifrar, btnDescifrar;
 	
 	public PanelSend() {
 		// TODO Auto-generated constructor stub
 		
-		setLayout(new GridLayout(6, 2));		
+		setLayout(new GridLayout(6, 2));	
 		cipheredMessage = new JTextField();
 		chat = new JLabel("Envie sua mensagem: ");
 		ciphered = new JLabel("Mensagem criptografada: ");
@@ -31,7 +30,7 @@ public class PanelSend extends JPanel {
 		conversation = new JTextArea();
 		message = new JTextField(20);
 		
-		setBorder( new CompoundBorder( new EmptyBorder( 10, 10, 10, 10 ), new TitledBorder( " CHAT CRYPTOGRAPH " ) ) );
+		setBorder( new CompoundBorder( new EmptyBorder( 10, 10, 10, 10 ), new TitledBorder( " CHAT CRYPTOGRAPH " ) ) );		
 		
 		add(history);
 		add(conversation);
