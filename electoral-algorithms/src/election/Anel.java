@@ -3,7 +3,6 @@ package election;
 import java.util.ArrayList;
 import java.util.Random;
 
-
 public class Anel {
 
 	private final int adicionar = 3000;
@@ -12,7 +11,7 @@ public class Anel {
 	private final int inativo_processo = 8000;
 
 	public static ArrayList<Processo> processosAtivos;
-	private final Object lock =new object();
+	private final Object lock = new object();
 
 	public Anel() {
 		processosAtivos = new ArrayList<Processo>();
@@ -75,7 +74,7 @@ public class Anel {
 
 	public void inativaProcesso() {
 		new Thread(new Runnable() {
-			
+
 			public void run() {
 				while (true) {
 					try {
@@ -88,7 +87,7 @@ public class Anel {
 						if (!processosAtivos.isEmpty()) {
 							int indexProcessoAleatorio = new Random().nextInt(processosAtivos.size());
 							Processo pRemover = processosAtivos.get(indexProcessoAleatorio);
-							if (pRemover != null && ! pRemover.isEhCoordenador()) {
+							if (pRemover != null && !pRemover.isEhCoordenador()) {
 								processosAtivos.remove(pRemover);
 								System.out.println("Processo " + pRemover.getPid() + " Inativo");
 							}
