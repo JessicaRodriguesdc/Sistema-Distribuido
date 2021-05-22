@@ -1,4 +1,3 @@
-### Implementação do Algoritmo de criptografia
 ## Algoritmo de criptografia
 
 <hr>
