@@ -9,5 +9,5 @@ JÉSSICA RODRIGUES DA COSTA 1-2018111637 <br> JÚLIO CÉSAR CARNEIRO DE OLIVEIRA
 Este repositório tem como objetivo demonstrar a implementação do :
 
 > Algoritmo de eleição - [electoral-algorithms](https://github.com/JessicaRodriguesdc/Sistema-Distribuido/tree/main/electoral-algorithms) <br>
-Algoritmo de criptografia - [encryption-application](https://github.com/JessicaRodriguesdc/Sistema-Distribuido/tree/main/encryption-application) <br>
+Algoritmo de criptografia - [encryption-algorithms](https://github.com/JessicaRodriguesdc/Sistema-Distribuido/tree/main/encryption-algorithms) <br>
 Problema Produtor/Consumidor - [problem-producer-consumer](https://github.com/JessicaRodriguesdc/Sistema-Distribuido/tree/main/problem-producer-consumer)
