@@ -49,7 +49,7 @@ public class Anel {
 		}).start();
 	}
 
-	public void fazRequicao() {
+	public void fazRequisicao() {
 		new Thread(new Runnable() {
 			@Override
 			public void run() {
