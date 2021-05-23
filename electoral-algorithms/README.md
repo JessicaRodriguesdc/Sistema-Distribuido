@@ -4,7 +4,9 @@
 
 ### Uso
 
->  O algoritmo de anel é baseado no uso de um anel virtual, mas
+>  Em geral o algoritmos de eleição tenta localizar o processo com o menor identificador (rank) para ser indicado como líder (ou coordenador).
+
+Anel - É baseado no uso de um anel virtual, mas
 sem token. Assumimos que os processos são fisicamente
 ou logicamente ordenado de tal forma que cada processo
 sabe quem é seu sucessor
