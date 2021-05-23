@@ -8,20 +8,20 @@ import static org.apache.commons.codec.binary.Base64.encodeBase64;
 
 public class Encrypt {
 	
-	// Definición del tipo de algoritmo a utilizar (AES, DES, RSA)
+	// Algoritmo que será utilizado (AES)
     private final static String alg = "AES";
-    // Definición del modo de cifrado a utilizar
+    // Modo de criptografia a ser usado
     private final static String cI = "AES/CBC/PKCS5Padding";
- 
+    
     /**
-     * Función de tipo String que recibe una llave (key), un vector de inicialización (iv)
-     * y el texto que se desea cifrar
-     * @param key la llave en tipo String a utilizar
-     * @param iv el vector de inicialización a utilizar
-     * @param cleartext el texto sin cifrar a encriptar
-     * @return el texto cifrado en modo String
-     * @throws Exception puede devolver excepciones de los siguientes tipos: NoSuchAlgorithmException, InvalidKeyException, InvalidAlgorithmParameterException, IllegalBlockSizeException, BadPaddingException, NoSuchPaddingException
-     */
+    * Função do tipo string que recebe uma chave (key), um vetor de inicialização (iv)
+    * e o texto a ser criptografado
+    * @param key a chave do tipo String a ser usada
+    * @param iv o vetor de inicialização a ser usado
+    * @param cleartext o texto não criptografado a ser criptografado
+    * @return o texto cifrado no modo String
+    * @throws Exception pode retornar exceções dos seguintes tipos: NoSuchAlgorithmException, InvalidKeyException, InvalidAlgorithmParameterException, IllegalBlockSizeException, BadPaddingException, NoSuchPaddingException
+    */
     public static String encrypt(String key, String iv, String cleartext) throws Exception {
             Cipher cipher = Cipher.getInstance(cI);
             SecretKeySpec skeySpec = new SecretKeySpec(key.getBytes(), alg);
@@ -32,14 +32,14 @@ public class Encrypt {
     }
  
     /**
-     * Función de tipo String que recibe una llave (key), un vector de inicialización (iv)
-     * y el texto que se desea descifrar
-     * @param key la llave en tipo String a utilizar
-     * @param iv el vector de inicialización a utilizar
-     * @param encrypted el texto cifrado en modo String
-     * @return el texto desencriptado en modo String
-     * @throws Exception puede devolver excepciones de los siguientes tipos: NoSuchAlgorithmException, NoSuchPaddingException, InvalidKeyException, InvalidAlgorithmParameterException, IllegalBlockSizeException
-     */
+    * Função do tipo string que recebe uma chave (key), um vetor de inicialização (iv)
+    * e o texto a ser decifrado
+    * @param key a chave do tipo String a ser usada
+    * @param iv o vetor de inicialização a ser usado
+    * @param criptografou o texto cifrado no modo String
+    * @return o texto descriptografado no modo String
+    * @throws Exception pode retornar exceções dos seguintes tipos: NoSuchAlgorithmException, NoSuchPaddingException, InvalidKeyException, InvalidAlgorithmParameterException, IllegalBlockSizeException
+    */
     public static String decrypt(String key, String iv, String encrypted) throws Exception {
             Cipher cipher = Cipher.getInstance(cI);
             SecretKeySpec skeySpec = new SecretKeySpec(key.getBytes(), alg);

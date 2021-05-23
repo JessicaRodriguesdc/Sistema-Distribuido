@@ -8,13 +8,11 @@ public class Controller {
 	PanelSend panelSend;
 	ServerConnection connection;
 	PanelButton panelButton;
-//	ArrayList<String> llavesDes;
 
 	public Controller() {
 		// TODO Auto-generated constructor stub
 		connection = new ServerConnection(this);
 		connection.start();
-//		llavesDes = new ArrayList<>();		
 	}
 
 
