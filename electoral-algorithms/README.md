@@ -140,7 +140,7 @@ public void criarProcessos() {
 
 	}
 ```
-* Classe Processos
+* Classe Processo
 
 > Enviar Requisição
 
