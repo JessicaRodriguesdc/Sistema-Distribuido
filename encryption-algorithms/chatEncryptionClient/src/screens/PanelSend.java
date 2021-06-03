@@ -30,7 +30,7 @@ public class PanelSend extends JPanel {
 		conversation = new JTextArea();
 		message = new JTextField(20);
 		
-		setBorder( new CompoundBorder( new EmptyBorder( 10, 10, 10, 10 ), new TitledBorder( " CHAT CRYPTOGRAPH " ) ) );		
+		setBorder( new CompoundBorder( new EmptyBorder( 10, 10, 10, 10 ), new TitledBorder( " CHAT CRYPTOGRAPH - CLIENT " ) ) );		
 		
 		add(history);
 		add(conversation);
