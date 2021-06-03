@@ -4,7 +4,6 @@ public class application {
 	public static final int VALOR_INICIAL_PRODUTO = 20;
 	public static final int VALOR_LIMITE_PRODUTO = 30;
 	public static final int DELAY = 100;
-	public static final int QTD_THREAD = 3;
 	
 	public static void main(String[] args) {
 		Product produto = new Product(VALOR_INICIAL_PRODUTO);

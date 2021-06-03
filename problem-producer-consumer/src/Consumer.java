@@ -13,7 +13,7 @@ public class Consumer extends Thread {
 		for (int i = application.VALOR_INICIAL_PRODUTO; i <= application.VALOR_LIMITE_PRODUTO; i++) {
 			valor = this.product.useProduct(this.getName());
 			try {
-				sleep(1000);
+				sleep(application.DELAY);
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
