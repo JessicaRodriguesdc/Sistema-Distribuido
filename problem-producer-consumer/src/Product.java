@@ -13,11 +13,6 @@ public class Product {
 				this.wait();
 			} catch (InterruptedException e) {}
 		}
-		while(!this.usable) {
-			try {
-				this.wait();
-			} catch (InterruptedException e) {}
-		}
 		
 		System.out.println("Consumidor: \t" + idThread + "\tconsumiu: \t" + this.product);
 		notifyAll();
