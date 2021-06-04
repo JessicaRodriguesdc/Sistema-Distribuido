@@ -9,9 +9,16 @@
 * Integridade
 * Identidade
 
-AES - O padrão de criptografia avançada - advanced encryption standard, também conhecido por seu nome original Rijndael, é uma especificação para a criptografia de dados eletrônicos estabelecida pelo instituto nacional de padrões e tecnologia dos E.U.A
+AES - O padrão de criptografia avançada - advanced encryption standard, também conhecido por seu nome original Rijndael, é uma especificação para a criptografia de dados eletrônicos estabelecida pelo instituto nacional de padrões e tecnologia dos E.U.A.
+O algoritmo AES é capaz de usar chaves criptográficas de 128, 192 e 256 bits para criptografar e descriptografar dados em blocos de 128 bits.
 
 ### Implementação
+
+Para descrever a estrutura do AES é fundamental termos em mente a definição de estado, no contexto do algoritmo. Estado e a matriz de bytes que iremos manipular entre as diversas rodadas, ou rounds, e que portanto será modificada a cada etapa. No Rijndael, o tamanho dessa matriz vai depender do tamanho do bloco utilizado, sendo composta de 4
+linhas e Nb colunas, onde Nb e o número de bits do bloco dividido por 32 (pois 4 bytes representam 32 bits).
+
+A chave é agrupada da mesma maneira que o bloco de dados, com número de colunas. No AES o número de rodadas varia de acordo com o tamanho da chave.
+
 
 * Classe Encrypt
 
