@@ -15,7 +15,3 @@
 * uso de métodos synchronized para garantir que os métodos sejam executados em ordem;
 * uso de boleanos para indicar quando o dado está pronto para ser consumido;
 * uso do método wait (garantir que será esperado o produto ficar pronto) e notifyAll (garantir que todas as threads saibam o estado atual dos produtos gerados/consumidos) para garantir que uma organização extra
-
-```xml
-
-```
